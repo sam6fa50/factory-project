@@ -1,0 +1,6 @@
+jsonl:
+  enabled: true
+  directory: runs/mock_demo
+sqlite:
+  enabled: false
+  path: runs/telemetry.sqlite

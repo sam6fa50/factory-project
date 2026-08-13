@@ -1,0 +1,17 @@
+backend: factory_io
+mode: live
+protocol: web_api
+host: 127.0.0.1
+port: 7410
+scene: demo_conveyor
+polling_interval: 0.5
+tag_map_path: config/tag_maps/factory_io_demo_scene.yaml
+endpoints:
+  # Fill these in for your Factory I/O Web API or custom bridge.
+  # read_tags should accept {"tags": ["RawTagName"]} and return either
+  # {"tags": {"RawTagName": value}} or {"RawTagName": value}.
+  read_tags:
+  write_tag:
+  reset:
+metadata:
+  notes: Factory I/O live transport is scaffolded behind the adapter boundary.

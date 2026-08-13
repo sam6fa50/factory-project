@@ -1,0 +1,52 @@
+backend: factory_io
+scene: demo_conveyor
+assets:
+  - asset_id: conveyor_1
+    name: Demo Conveyor
+    kind: conveyor
+    metadata:
+      station: demo_cell
+tags:
+  - raw_name: SensorEntry
+    simir_id: conveyor_1.entry_sensor
+    asset_id: conveyor_1
+    kind: sensor
+    value_type: bool
+
+  - raw_name: SensorExit
+    simir_id: conveyor_1.exit_sensor
+    asset_id: conveyor_1
+    kind: sensor
+    value_type: bool
+
+  - raw_name: ConveyorMotor
+    simir_id: conveyor_1.motor_command
+    asset_id: conveyor_1
+    kind: actuator
+    value_type: bool
+    writable: true
+
+  - raw_name: ConveyorSpeed
+    simir_id: conveyor_1.conveyor_speed
+    asset_id: conveyor_1
+    kind: metric
+    value_type: float
+    unit: m/s
+
+  - raw_name: PartCounter
+    simir_id: conveyor_1.part_counter
+    asset_id: conveyor_1
+    kind: counter
+    value_type: int
+
+  - raw_name: BlockedSensor
+    simir_id: conveyor_1.blocked_sensor
+    asset_id: conveyor_1
+    kind: sensor
+    value_type: bool
+
+  - raw_name: MachineRunning
+    simir_id: conveyor_1.machine_running
+    asset_id: conveyor_1
+    kind: state
+    value_type: bool

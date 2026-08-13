@@ -1,0 +1,15 @@
+rules:
+  - rule_id: conveyor_entry_to_exit_deadline
+    type: transition_deadline
+    asset_id: conveyor_1
+    description: Entry sensor activation should be followed by exit sensor activation within the expected travel time.
+    start_tag: conveyor_1.entry_sensor
+    end_tag: conveyor_1.exit_sensor
+    max_seconds: 3.0
+    severity: high
+    candidate_causes:
+      - sensor_failed
+      - tag_mapping_wrong
+      - conveyor_speed_assumption_wrong
+      - part_jam
+      - downstream_blocked

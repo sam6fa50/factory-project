@@ -1,0 +1,8 @@
+backend: factory_io
+mode: mock
+scene: demo_conveyor
+scenario: normal
+polling_interval: 0.5
+tag_map_path: config/tag_maps/factory_io_demo_scene.yaml
+metadata:
+  description: Synthetic Factory I/O telemetry for MVP development.
